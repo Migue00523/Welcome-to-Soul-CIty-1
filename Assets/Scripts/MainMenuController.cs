@@ -3,15 +3,17 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour
 {
-    [SerializeField] private string nombreEscenaJuego = "SelectionCar";
+    [SerializeField] private string CambiarEscena = "SelectionCar";
 
     public void OnBotonJugar()
     {
-        GameManager.Instance.IniciarJuego(nombreEscenaJuego);
+        GameManager.Instance.IniciarJuego(CambiarEscena);
     }
 
     public void OnBotonSalir()
     {
         GameManager.Instance.SalirJuego();
     }
+
+ 
 }

@@ -26,9 +26,9 @@ public class GameManager : MonoBehaviour
         VehiculoSeleccionado = indice;
     }
 
-    public void IniciarJuego(string SelectionCar)
+    public void IniciarJuego(string CambiarEscena)
     {
-        SceneManager.LoadScene(SelectionCar );
+        SceneManager.LoadScene(CambiarEscena);
     }
 
     public void SalirJuego()

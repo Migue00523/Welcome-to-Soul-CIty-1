@@ -3,6 +3,7 @@ using TMPro;
 
 public class CarSelectorController : MonoBehaviour
 {
+    [SerializeField] private string CambiarEscena = "SoulCity"; 
     [SerializeField] private GameObject[] vehiculos;
     [SerializeField] private TextMeshProUGUI nombreVehiculo;
     [SerializeField] private float velocidadRotacion = 30f;
@@ -38,7 +39,7 @@ public class CarSelectorController : MonoBehaviour
     public void Seleccionar()
     {
         GameManager.Instance.SetVehiculoSeleccionado(indiceActual);
-        GameManager.Instance.IniciarJuego("Ciudad");
+        GameManager.Instance.IniciarJuego(CambiarEscena);
 
     }
 
