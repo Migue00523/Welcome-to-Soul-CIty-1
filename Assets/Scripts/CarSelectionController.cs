@@ -5,8 +5,9 @@ public class CarSelectorController : MonoBehaviour
 {
     [SerializeField] private GameObject[] vehiculos;
     [SerializeField] private TextMeshProUGUI nombreVehiculo;
-    [SerializeField] private string nombreEscenaJuego = "SoulCity";
     [SerializeField] private float velocidadRotacion = 30f;
+    [SerializeField] private Transform puntoDisplay;
+    [SerializeField] private float escalaVehiculo = 1f;
 
     private int indiceActual = 0;
     private GameObject vehiculoActivo;
@@ -22,7 +23,6 @@ public class CarSelectorController : MonoBehaviour
             vehiculoActivo.transform.Rotate(Vector3.up, velocidadRotacion * Time.deltaTime);
     }
 
-    // Métodos públicos — los llaman los botones
     public void Siguiente()
     {
         indiceActual = (indiceActual + 1) % vehiculos.Length;
@@ -37,18 +37,23 @@ public class CarSelectorController : MonoBehaviour
 
     public void Seleccionar()
     {
-        // Delega la lógica al Singleton
         GameManager.Instance.SetVehiculoSeleccionado(indiceActual);
-        GameManager.Instance.IniciarJuego(nombreEscenaJuego);
+        GameManager.Instance.IniciarJuego("Ciudad");
+
     }
 
-    // Método privado — lógica interna de la clase
-    private void MostrarVehiculo(int indice)
+     private void MostrarVehiculo(int indice)
     {
         if (vehiculoActivo != null)
             Destroy(vehiculoActivo);
 
-        vehiculoActivo = Instantiate(vehiculos[indice], Vector3.zero, Quaternion.identity);
+        vehiculoActivo = Instantiate(
+            vehiculos[indice],
+            puntoDisplay.position,
+            puntoDisplay.rotation
+        );
+
+        vehiculoActivo.transform.localScale = Vector3.one * escalaVehiculo;
         nombreVehiculo.text = vehiculos[indice].name;
     }
-}
+}  
