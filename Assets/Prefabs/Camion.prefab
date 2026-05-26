@@ -50,10 +50,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0982112493cbea44a8847b1f0587c03e, type: 3}
       propertyPath: m_Name
-      value: delivery
+      value: Camion
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0982112493cbea44a8847b1f0587c03e, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0982112493cbea44a8847b1f0587c03e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -791687776747218595}
   m_SourcePrefab: {fileID: 100100000, guid: 0982112493cbea44a8847b1f0587c03e, type: 3}
+--- !u!1 &8205589595676618098 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0982112493cbea44a8847b1f0587c03e, type: 3}
+  m_PrefabInstance: {fileID: 9016617203109138467}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-791687776747218595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8205589595676618098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c345b58544178af4eb06933a01c05dd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarController
+  velocidad: 10
+  velocidadGiro: 100

@@ -50,10 +50,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e944a401e99fb82498fa9e07035bd41d, type: 3}
       propertyPath: m_Name
-      value: truck-flat
+      value: Camioneta Mini
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e944a401e99fb82498fa9e07035bd41d, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e944a401e99fb82498fa9e07035bd41d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -3398393093160400949}
   m_SourcePrefab: {fileID: 100100000, guid: e944a401e99fb82498fa9e07035bd41d, type: 3}
+--- !u!1 &4384639719945666517 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e944a401e99fb82498fa9e07035bd41d, type: 3}
+  m_PrefabInstance: {fileID: 3465580703345853060}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-3398393093160400949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4384639719945666517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c345b58544178af4eb06933a01c05dd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarController
+  velocidad: 10
+  velocidadGiro: 100
