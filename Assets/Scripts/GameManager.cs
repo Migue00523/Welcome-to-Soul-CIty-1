@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     // Estado global del juego
     public int VehiculoSeleccionado { get; private set; }
 
+    // Contador de almas
+    private int almasRecolectadas = 0;
 
     private void Awake()
     {
@@ -21,6 +23,7 @@ public class GameManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
+
     public void SetVehiculoSeleccionado(int indice)
     {
         VehiculoSeleccionado = indice;
@@ -35,5 +38,22 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Saliendo...");
         Application.Quit();
+    }
+
+    public void RecolectarAlma(int nivel)
+    {
+        almasRecolectadas++;
+
+        Debug.Log("Almas recolectadas: " + almasRecolectadas);
+
+        if (nivel == 1 && almasRecolectadas == 2)
+        {
+            Debug.Log("Primer edificio completado");
+        }
+
+        if (nivel == 2 && almasRecolectadas == 3)
+        {
+            Debug.Log("¡Juego completado!");
+        }
     }
 }
