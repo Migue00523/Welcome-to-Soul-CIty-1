@@ -6,11 +6,12 @@ public class GameManager : MonoBehaviour
     // Singleton
     public static GameManager Instance { get; private set; }
 
-    // Estado global del juego
+    // Vehículo seleccionado
     public int VehiculoSeleccionado { get; private set; }
 
-    // Contador de almas
-    private int almasRecolectadas = 0;
+    // Contadores de almas
+    private int almasNivel1 = 0;
+    private int almasNivel2 = 0;
 
     private void Awake()
     {
@@ -24,36 +25,60 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    // Guardar vehículo seleccionado
     public void SetVehiculoSeleccionado(int indice)
     {
         VehiculoSeleccionado = indice;
     }
 
-    public void IniciarJuego(string CambiarEscena)
+    // Cambiar escena
+    public void IniciarJuego(string cambiarEscena)
     {
-        SceneManager.LoadScene(CambiarEscena);
+        SceneManager.LoadScene(cambiarEscena);
     }
 
+    // Salir del juego
     public void SalirJuego()
     {
         Debug.Log("Saliendo...");
         Application.Quit();
     }
 
+    // Recolectar almas
     public void RecolectarAlma(int nivel)
     {
-        almasRecolectadas++;
-
-        Debug.Log("Almas recolectadas: " + almasRecolectadas);
-
-        if (nivel == 1 && almasRecolectadas == 2)
+        // NIVEL 1
+        if (nivel == 1)
         {
-            Debug.Log("Primer edificio completado");
+            almasNivel1++;
+
+            Debug.Log("Almas Nivel 1: " + almasNivel1);
+
+            // Cuando recoge las 2 almas
+            if (almasNivel1 >= 2)
+            {
+                Debug.Log("Nivel 1 completado");
+
+                // Volver a la ciudad
+                SceneManager.LoadScene("SoulCity");
+            }
         }
 
-        if (nivel == 2 && almasRecolectadas == 3)
+        // NIVEL 2
+        if (nivel == 2)
         {
-            Debug.Log("¡Juego completado!");
+            almasNivel2++;
+
+            Debug.Log("Almas Nivel 2: " + almasNivel2);
+
+            // Cuando recoge la última alma
+            if (almasNivel2 >= 1)
+            {
+                Debug.Log("Juego completado");
+
+                // Volver a la ciudad
+                SceneManager.LoadScene("SoulCity");
+            }
         }
     }
 }
