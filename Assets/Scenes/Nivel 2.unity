@@ -595,18 +595,13 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c1ebe0021e2a1aa46b0eab681b064f6b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1846924577}
-    - targetCorrespondingSourceObject: {fileID: -7134394785105016132, guid: c1ebe0021e2a1aa46b0eab681b064f6b, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c1ebe0021e2a1aa46b0eab681b064f6b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1846924578}
   m_SourcePrefab: {fileID: 100100000, guid: c1ebe0021e2a1aa46b0eab681b064f6b, type: 3}
 --- !u!1 &1846924575 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c1ebe0021e2a1aa46b0eab681b064f6b, type: 3}
-  m_PrefabInstance: {fileID: 1846924574}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1846924576 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -7134394785105016132, guid: c1ebe0021e2a1aa46b0eab681b064f6b, type: 3}
   m_PrefabInstance: {fileID: 1846924574}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1846924577
@@ -621,14 +616,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 791398885c63d0f43b1ebcd04185d461, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Alma3
-  nivel: 2
 --- !u!65 &1846924578
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1846924576}
+  m_GameObject: {fileID: 1846924575}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -641,8 +635,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.48822674, y: 0.6621549, z: 0.48822674}
-  m_Center: {x: -0.0000009536743, y: 0.2179303, z: 0.0000019073486}
+  m_Size: {x: 0.5, y: 0.5, z: 0.5}
+  m_Center: {x: 0.1, y: 0.2, z: -0.8}
 --- !u!1 &2046845046
 GameObject:
   m_ObjectHideFlags: 0

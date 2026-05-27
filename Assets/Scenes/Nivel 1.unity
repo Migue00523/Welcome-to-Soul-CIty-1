@@ -442,18 +442,13 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c1ebe0021e2a1aa46b0eab681b064f6b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 460937958}
-    - targetCorrespondingSourceObject: {fileID: -7134394785105016132, guid: c1ebe0021e2a1aa46b0eab681b064f6b, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c1ebe0021e2a1aa46b0eab681b064f6b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 460937959}
   m_SourcePrefab: {fileID: 100100000, guid: c1ebe0021e2a1aa46b0eab681b064f6b, type: 3}
 --- !u!1 &460937956 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c1ebe0021e2a1aa46b0eab681b064f6b, type: 3}
-  m_PrefabInstance: {fileID: 460937955}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &460937957 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -7134394785105016132, guid: c1ebe0021e2a1aa46b0eab681b064f6b, type: 3}
   m_PrefabInstance: {fileID: 460937955}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &460937958
@@ -468,14 +463,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 791398885c63d0f43b1ebcd04185d461, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Alma1
-  nivel: 1
 --- !u!65 &460937959
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 460937957}
+  m_GameObject: {fileID: 460937956}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -488,8 +482,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.48822704, y: 0.6621549, z: 0.48822704}
-  m_Center: {x: 0, y: 0.2179303, z: -0.0000019073486}
+  m_Size: {x: 0.5, y: 0.5, z: 0.5}
+  m_Center: {x: 0.1, y: 0.2, z: -0.8}
 --- !u!1001 &1112918638
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -597,18 +591,13 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c1ebe0021e2a1aa46b0eab681b064f6b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1112918641}
-    - targetCorrespondingSourceObject: {fileID: -7134394785105016132, guid: c1ebe0021e2a1aa46b0eab681b064f6b, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c1ebe0021e2a1aa46b0eab681b064f6b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1112918642}
   m_SourcePrefab: {fileID: 100100000, guid: c1ebe0021e2a1aa46b0eab681b064f6b, type: 3}
 --- !u!1 &1112918639 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c1ebe0021e2a1aa46b0eab681b064f6b, type: 3}
-  m_PrefabInstance: {fileID: 1112918638}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1112918640 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -7134394785105016132, guid: c1ebe0021e2a1aa46b0eab681b064f6b, type: 3}
   m_PrefabInstance: {fileID: 1112918638}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1112918641
@@ -623,14 +612,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 791398885c63d0f43b1ebcd04185d461, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Alma2
-  nivel: 1
 --- !u!65 &1112918642
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1112918640}
+  m_GameObject: {fileID: 1112918639}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -643,8 +631,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.4882268, y: 0.6621549, z: 0.4882268}
-  m_Center: {x: 0.0000019073486, y: 0.2179303, z: -0.0000019073486}
+  m_Size: {x: 0.5, y: 0.5, z: 0.5}
+  m_Center: {x: 0.1, y: 0.2, z: -0.7}
 --- !u!1001 &1484775171
 PrefabInstance:
   m_ObjectHideFlags: 0

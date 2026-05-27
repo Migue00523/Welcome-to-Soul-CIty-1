@@ -63,6 +63,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5f61973046f05224387704a86499b9e2, type: 3}
       insertIndex: -1
       addedObject: {fileID: -5878920839784414116}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5f61973046f05224387704a86499b9e2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -7018879844649649181}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5f61973046f05224387704a86499b9e2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1731250371452092235}
   m_SourcePrefab: {fileID: 100100000, guid: 5f61973046f05224387704a86499b9e2, type: 3}
 --- !u!1 &6864447848132118291 stripped
 GameObject:
@@ -81,5 +87,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c345b58544178af4eb06933a01c05dd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CarController
-  velocidad: 10
+  velocidad: 7
   velocidadGiro: 100
+--- !u!54 &-7018879844649649181
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6864447848132118291}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
+--- !u!65 &1731250371452092235
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6864447848132118291}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6966858, y: 1.3981171, z: 3.762024}
+  m_Center: {x: 0.025436401, y: 0.7281418, z: -0.054473877}
